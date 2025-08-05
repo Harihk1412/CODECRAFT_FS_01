@@ -45,7 +45,10 @@ const Login = () => {
       <Navbar />
 
       <div className='bg-white bg-opacity-10 backdrop-blur-md p-10 rounded-2xl shadow-xl w-full sm:w-96 z-20'>
-        <h2 className='text-3xl text-white text-center font-bold mb-2'>
+        <h2
+          className='text-3xl text-center font-bold mb-2'
+          style={{ color: state === 'Sign Up' ? 'black' : 'white' }}
+        >
           {state === 'Sign Up' ? 'Create account' : 'Login'}
         </h2>
 
@@ -129,4 +132,3 @@ const Login = () => {
 }
 
 export default Login
-
